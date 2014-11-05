@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892DBBB81A0A92FC0038EEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C71A03E52D00D4B5C3 /* ViewController.swift */; };
+		892DBBBA1A0A93240038EEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AC74C91A03E52D00D4B5C3 /* Main.storyboard */; };
+		892DBBBB1A0A93520038EEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C51A03E52D00D4B5C3 /* AppDelegate.swift */; };
+		892DBBC11A0A9BFA0038EEB7 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DBBBE1A0A99290038EEB7 /* CanvasView.swift */; };
+		892DBBC21A0A9BFB0038EEB7 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DBBBE1A0A99290038EEB7 /* CanvasView.swift */; };
 		89AC74C61A03E52D00D4B5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C51A03E52D00D4B5C3 /* AppDelegate.swift */; };
 		89AC74C81A03E52D00D4B5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C71A03E52D00D4B5C3 /* ViewController.swift */; };
 		89AC74CB1A03E52D00D4B5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AC74C91A03E52D00D4B5C3 /* Main.storyboard */; };
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		892DBBB21A092EEA0038EEB7 /* SpecTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecTests.swift; sourceTree = "<group>"; };
+		892DBBBE1A0A99290038EEB7 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		89AC74C01A03E52D00D4B5C3 /* FingerPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AC74C41A03E52D00D4B5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89AC74C51A03E52D00D4B5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		892DBBB11A092EEA0038EEB7 /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				892DBBB21A092EEA0038EEB7 /* SpecTests.swift */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
 		89AC74B71A03E52D00D4B5C3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,7 @@
 				89AC74CC1A03E52D00D4B5C3 /* Images.xcassets */,
 				89AC74CE1A03E52D00D4B5C3 /* LaunchScreen.xib */,
 				89AC74C31A03E52D00D4B5C3 /* Supporting Files */,
+				892DBBBE1A0A99290038EEB7 /* CanvasView.swift */,
 			);
 			path = FingerPaint;
 			sourceTree = "<group>";
@@ -98,6 +114,7 @@
 		89AC74D81A03E52D00D4B5C3 /* FingerPaintTests */ = {
 			isa = PBXGroup;
 			children = (
+				892DBBB11A092EEA0038EEB7 /* spec */,
 				89AC74DB1A03E52D00D4B5C3 /* FingerPaintTests.swift */,
 				89AC74D91A03E52D00D4B5C3 /* Supporting Files */,
 			);
@@ -202,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892DBBBA1A0A93240038EEB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +232,7 @@
 			files = (
 				89AC74C81A03E52D00D4B5C3 /* ViewController.swift in Sources */,
 				89AC74C61A03E52D00D4B5C3 /* AppDelegate.swift in Sources */,
+				892DBBC21A0A9BFB0038EEB7 /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892DBBBB1A0A93520038EEB7 /* AppDelegate.swift in Sources */,
+				892DBBB81A0A92FC0038EEB7 /* ViewController.swift in Sources */,
+				892DBBC11A0A9BFA0038EEB7 /* CanvasView.swift in Sources */,
 				89AC74DC1A03E52D00D4B5C3 /* FingerPaintTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +427,7 @@
 				89AC74E11A03E52D00D4B5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89AC74E21A03E52D00D4B5C3 /* Build configuration list for PBXNativeTarget "FingerPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +436,7 @@
 				89AC74E41A03E52D00D4B5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
