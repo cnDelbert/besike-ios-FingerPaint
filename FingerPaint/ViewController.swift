@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         
         // Add the canvasView to the root view
         self.view.addSubview(self.canvasView)
+        
+        // Load color pickers
+        self.setupColorPickers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,8 +61,32 @@ class ViewController: UIViewController {
         let size = (44,44)
         
         // TODO: Create UIButton and add them to the view hierarchy
-        //
-        // ...
+        var button: UIButton
+        for i in 0...4 {
+            button = UIButton(frame: CGRect(x: positions[i].0, y: positions[i].1, width: size.0, height: size.1))
+            button.backgroundColor = colors[i]
+            button.enabled = true
+            button.tag = i+1
+            
+            button.layer.shadowColor = UIColor(white: 0.4, alpha: 1).CGColor
+            button.layer.shadowOffset = CGSize(width: 0, height: 0)
+            button.layer.shadowRadius = 0
+            button.layer.shadowOpacity = 1
+            
+            button.addTarget(self, action:"colorPickerTapped:",forControlEvents:UIControlEvents.TouchUpInside)
+            
+            self.canvasView.addSubview(button)
+        }
+    }
+    
+    func colorPickerTapped(button:UIButton) {
+        println("Tapped: \(button.backgroundColor)")
+        for i in 1...5 {
+            self.canvasView.viewWithTag(i)!.layer.shadowRadius = 0
+        }
+
+        self.canvasView.currentColor = button.backgroundColor!.CGColor
+        button.layer.shadowRadius = 3
     }
 
 }

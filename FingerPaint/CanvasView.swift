@@ -13,6 +13,13 @@ class CanvasView: UIView {
     let zigzag = [(100, 100),
     (100, 150), (150, 150),
     (150, 200)]
+    
+    var currentColor :CGColor = UIColor.blackColor().CGColor {
+        didSet{
+            setNeedsDisplay()
+//            println("Set")
+        }
+    }
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -25,6 +32,18 @@ class CanvasView: UIView {
     {
         let context = UIGraphicsGetCurrentContext()
         
+//        CGContextBeginPath(context)
+//        for i in 0..<3 {
+//            var cur_x = zigzag[i].0
+//            var cur_y = zigzag[i].1
+//            var next_x = zigzag[i+1].0
+//            var next_y = zigzag[i+1].1
+//            CGContextMoveToPoint(context, CGFloat(cur_x), CGFloat(cur_y))
+//            CGContextAddLineToPoint(context, CGFloat(next_x), CGFloat(next_y))
+//            CGContextSetStrokeColorWithColor(context, UIColor.redColor().CGColor)
+//            CGContextStrokePath(context)
+//        }
+        
         CGContextBeginPath(context)
         for i in 0..<3 {
             var cur_x = zigzag[i].0
@@ -33,10 +52,29 @@ class CanvasView: UIView {
             var next_y = zigzag[i+1].1
             CGContextMoveToPoint(context, CGFloat(cur_x), CGFloat(cur_y))
             CGContextAddLineToPoint(context, CGFloat(next_x), CGFloat(next_y))
-            CGContextSetStrokeColorWithColor(context, UIColor.redColor().CGColor)
+            CGContextSetStrokeColorWithColor(context, currentColor)
             CGContextStrokePath(context)
         }
 
+    }
+    
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let t = touches.anyObject() as UITouch
+        let point = t.locationInView(self)
+        println("Begin: \(point)")
+    }
+    override func touchesMoved(touches: NSSet!, withEvent event: UIEvent!) {
+        // TODO: Add a new touch point to the path
+        let t = touches.anyObject() as UITouch
+        let point = t.locationInView(self)
+        println("Move: \(point)")
+    }
+    
+    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+        // TODO: Add the end touch point
+        let t = touches.anyObject() as UITouch
+        let point = t.locationInView(self)
+        println("End: \(point)")
     }
 
 }

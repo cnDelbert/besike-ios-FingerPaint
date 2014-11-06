@@ -12,6 +12,8 @@
 		892DBBBB1A0A93520038EEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C51A03E52D00D4B5C3 /* AppDelegate.swift */; };
 		892DBBC11A0A9BFA0038EEB7 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DBBBE1A0A99290038EEB7 /* CanvasView.swift */; };
 		892DBBC21A0A9BFB0038EEB7 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DBBBE1A0A99290038EEB7 /* CanvasView.swift */; };
+		892DBBC61A0BE64D0038EEB7 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DBBC51A0BE64D0038EEB7 /* Path.swift */; };
+		892DBBC71A0BE64D0038EEB7 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DBBC51A0BE64D0038EEB7 /* Path.swift */; };
 		89AC74C61A03E52D00D4B5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C51A03E52D00D4B5C3 /* AppDelegate.swift */; };
 		89AC74C81A03E52D00D4B5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC74C71A03E52D00D4B5C3 /* ViewController.swift */; };
 		89AC74CB1A03E52D00D4B5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AC74C91A03E52D00D4B5C3 /* Main.storyboard */; };
@@ -33,6 +35,7 @@
 /* Begin PBXFileReference section */
 		892DBBB21A092EEA0038EEB7 /* SpecTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecTests.swift; sourceTree = "<group>"; };
 		892DBBBE1A0A99290038EEB7 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		892DBBC51A0BE64D0038EEB7 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		89AC74C01A03E52D00D4B5C3 /* FingerPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AC74C41A03E52D00D4B5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89AC74C51A03E52D00D4B5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 				89AC74CE1A03E52D00D4B5C3 /* LaunchScreen.xib */,
 				89AC74C31A03E52D00D4B5C3 /* Supporting Files */,
 				892DBBBE1A0A99290038EEB7 /* CanvasView.swift */,
+				892DBBC51A0BE64D0038EEB7 /* Path.swift */,
 			);
 			path = FingerPaint;
 			sourceTree = "<group>";
@@ -232,6 +236,7 @@
 			files = (
 				89AC74C81A03E52D00D4B5C3 /* ViewController.swift in Sources */,
 				89AC74C61A03E52D00D4B5C3 /* AppDelegate.swift in Sources */,
+				892DBBC61A0BE64D0038EEB7 /* Path.swift in Sources */,
 				892DBBC21A0A9BFB0038EEB7 /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +248,7 @@
 				892DBBBB1A0A93520038EEB7 /* AppDelegate.swift in Sources */,
 				892DBBB81A0A92FC0038EEB7 /* ViewController.swift in Sources */,
 				892DBBC11A0A9BFA0038EEB7 /* CanvasView.swift in Sources */,
+				892DBBC71A0BE64D0038EEB7 /* Path.swift in Sources */,
 				89AC74DC1A03E52D00D4B5C3 /* FingerPaintTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
