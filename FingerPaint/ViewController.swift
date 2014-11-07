@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         
         // Load color pickers
         self.setupColorPickers()
+        
+        self.canvasView.setupClearButton()
     }
 
     override func didReceiveMemoryWarning() {

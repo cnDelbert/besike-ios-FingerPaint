@@ -10,8 +10,8 @@ import UIKit
 
 class Path {
     var points: [CGPoint] = []
-    let color: UIColor
-    init(color: UIColor) {
+    let color: CGColor
+    init(color: CGColor) {
         self.color = color
     }
     
